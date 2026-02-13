@@ -50,14 +50,10 @@ This implementation includes several variants:
 $$ \hat{y} = X\theta $$
 
 **Loss Functions:**
--   **OLS**: $J(\theta) = \frac{1}{2} ||y - X\theta||^2$
--   **Ridge**: $J(\theta) = \frac{1}{2} ||y - X\theta||^2 + \frac{\lambda}{2} ||\theta||_2^2$
--   **Lasso**: $J(\theta) = \frac{1}{2} ||y - X\theta||^2 + \lambda ||\theta||_1$
+-   **OLS**: $J(\theta) = \frac{1}{2} ||y - X\theta||^2$-   **Ridge**:$J(\theta) = \frac{1}{2} ||y - X\theta||^2 + \frac{\lambda}{2} ||\theta||_2^2$-   **Lasso**:$J(\theta) = \frac{1}{2} ||y - X\theta||^2 + \lambda ||\theta||_1$
 
 **Gradients:**
--   **OLS**: $-(y - \hat{y})X$
--   **Ridge**: $-(y - \hat{y})X + \lambda \theta$
--   **Lasso**: $-(y - \hat{y})X + \lambda \cdot \text{sign}(\theta)$
+-   **OLS**: $-(y - \hat{y})X$-   **Ridge**:$-(y - \hat{y})X + \lambda \theta$-   **Lasso**:$-(y - \hat{y})X + \lambda \cdot \text{sign}(\theta)$
 
 ## 4. Inputs Required
 
@@ -88,7 +84,7 @@ $$ \hat{y} = X\theta $$
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: Matrix operations are optimized.
--   **Memory**: Closed form solution requires $O(features^2)$ memory to invert the matrix. Gradient descent is $O(features)$.
+-   **Memory**: Closed form solution requires $O(features^2)$memory to invert the matrix. Gradient descent is$O(features)$.
 
 ## 7. Underlying Data Structure
 

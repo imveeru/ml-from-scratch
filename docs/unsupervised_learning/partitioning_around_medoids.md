@@ -47,7 +47,7 @@ This makes K-Medoids more robust to noise and outliers because medoids are less 
 
 **Cost Function:**
 $$ J = \sum_{j=1}^{k} \sum_{x \in C_j} d(x, m_j) $$
-Where $m_j$ is the medoid of cluster $j$, and $d$ is an arbitrary distance metric (usually Euclidean or Manhattan).
+Where $m_j$is the medoid of cluster $j$, and $d$ is an arbitrary distance metric (usually Euclidean or Manhattan).
 
 ## 4. Inputs Required
 

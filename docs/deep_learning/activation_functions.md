@@ -6,8 +6,7 @@ This file contains implementations of various activation functions used in Neura
 
 ### Sigmoid
 $$ \sigma(x) = \frac{1}{1+e^{-x}} $$
-**Derivative:** $\sigma(x)(1 - \sigma(x))$
--   **Range**: $(0, 1)$. Good for binary classification output. Prone to vanishing gradient.
+**Derivative:** $\sigma(x)(1 - \sigma(x))$-   **Range**:$(0, 1)$. Good for binary classification output. Prone to vanishing gradient.
 
 ### Softmax
 $$ \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}} $$
@@ -15,8 +14,7 @@ $$ \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}} $$
 
 ### Tanh (Hyperbolic Tangent)
 $$ \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
-**Derivative:** $1 - \tanh^2(x)$
--   **Range**: $(-1, 1)$. Zero-centered, generally better than Sigmoid for hidden layers.
+**Derivative:** $1 - \tanh^2(x)$-   **Range**:$(-1, 1)$. Zero-centered, generally better than Sigmoid for hidden layers.
 
 ### ReLU (Rectified Linear Unit)
 $$ f(x) = \max(0, x) $$

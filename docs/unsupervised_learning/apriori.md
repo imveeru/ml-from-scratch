@@ -77,7 +77,7 @@ $$ \text{Confidence}(A \rightarrow B) = \frac{\text{Support}(A \cup B)}{\text{Su
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: Counting support for candidates can be parallelized.
--   **Memory**: Can be very memory intensive. Storing all candidates $C_k$ can exhaust RAM if $k$ is large and min_sup is low.
+-   **Memory**: Can be very memory intensive. Storing all candidates $C_k$can exhaust RAM if $k$ is large and min_sup is low.
 
 ## 7. Underlying Data Structure
 

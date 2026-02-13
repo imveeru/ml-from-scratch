@@ -63,7 +63,7 @@ $$ c_j = \frac{1}{|C_j|} \sum_{x \in C_j} x $$
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: Distance calculations can be parallelized.
--   **Memory**: $O(N \times K)$. Very memory efficient compared to hierarchical clustering $O(N^2)$.
+-   **Memory**: $O(N \times K)$. Very memory efficient compared to hierarchical clustering$O(N^2)$.
 
 ## 7. Underlying Data Structure
 

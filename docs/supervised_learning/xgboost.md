@@ -38,7 +38,7 @@ This implementation focuses on the core mathematical principles (Taylor expansio
 
 **Objective Function (at step t):**
 $$ Obj^{(t)} \approx \sum_{i=1}^{n} [g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i)] + \Omega(f_t) $$
-Where $g_i$ is first derivative (gradient) and $h_i$ is second derivative (Hessian) of loss.
+Where $g_i$is first derivative (gradient) and $h_i$ is second derivative (Hessian) of loss.
 
 **Leaf Parameter Calculation:**
 $$ \theta^* = -\frac{\sum g_i}{\sum h_i + \lambda} $$

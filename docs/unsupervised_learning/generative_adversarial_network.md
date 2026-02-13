@@ -38,7 +38,7 @@ Train(epochs):
 -   The **Generator ($G$)** takes random noise as input and tries to generate data samples (e.g., images) that resemble the real training data.
 -   The **Discriminator ($D$)** takes a data sample as input and tries to predict whether it is real (from the dataset) or fake (from the generator).
 
-As training progresses, $G$ becomes better at fooling $D$, and $D$ becomes better at detecting fakes, leading to the generation of highly realistic data.
+As training progresses, $G$becomes better at fooling $D$, and $D$ becomes better at detecting fakes, leading to the generation of highly realistic data.
 
 ## 3. Math Formulas
 

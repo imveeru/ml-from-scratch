@@ -51,7 +51,7 @@ The framework follows a Sequential API style similar to Keras.
 ### Industry Best Practices
 -   **Mini-batches**: Always use mini-batch training (batch_size < dataset size) for stochastic gradient descent to escape local minima and fit in memory.
 -   **Validation**: Always provide a validation set to monitor for overfitting during training.
--   **Input Normalization**: Ensure input $X$ is scaled (e.g., to $[0, 1]$ or standardized) for faster convergence.
+-   **Input Normalization**: Ensure input $X$is scaled (e.g., to $[0, 1]$ or standardized) for faster convergence.
 
 ## 3. Concurrency, Parallelism, Memory Management
 

@@ -40,7 +40,7 @@ It works by analyzing two measures of scatter:
 1.  **Within-Class Scatter ($S_W$)**: How spread out the data is within each individual class. We want to *minimize* this.
 2.  **Between-Class Scatter ($S_B$)**: How spread out the class means are from the total mean. We want to *maximize* this.
 
-The algorithm finds the projection matrix $\Theta$ that maximizes the ratio $\text{det}(\Theta^T S_B \Theta) / \text{det}(\Theta^T S_W \Theta)$. This solution is given by the eigenvectors of $S_W^{-1} S_B$.
+The algorithm finds the projection matrix $\Theta$that maximizes the ratio $\text{det}(\Theta^T S_B \Theta) / \text{det}(\Theta^T S_W \Theta)$. This solution is given by the eigenvectors of$S_W^{-1} S_B$.
 
 ## 3. Math Formulas
 
@@ -49,7 +49,7 @@ $$ S_W = \sum_{c} S_c = \sum_{c} \sum_{i \in c} (x_i - \mu_c)(x_i - \mu_c)^T $$
 
 **Between-Class Scatter Matrix:**
 $$ S_B = \sum_{c} N_c (\mu_c - \mu)(\mu_c - \mu)^T $$
-Where $\mu$ is the overall mean and $\mu_c$ is the class mean.
+Where $\mu$is the overall mean and $\mu_c$ is the class mean.
 
 **Optimization Problem:**
 $$ \Theta_{opt} = \text{argmax}_\Theta \frac{|\Theta^T S_B \Theta|}{|\Theta^T S_W \Theta|} $$
@@ -69,7 +69,7 @@ Solution corresponds to the eigenvectors of $S_W^{-1} S_B$ with the largest eige
 -   **Preprocessing**: As a feature extraction step before a classifier (like KNN or Naive Bayes).
 
 ### When not to use:
--   **n_components limitation**: You can only project to at most $C-1$ dimensions (where $C$ is number of classes). If you need more dimensions, use PCA.
+-   **n_components limitation**: You can only project to at most $C-1$dimensions (where $C$ is number of classes). If you need more dimensions, use PCA.
 -   **Non-Linearity**: Fails if class separation is non-linear.
 
 ### Industry Best Practices:
@@ -79,7 +79,7 @@ Solution corresponds to the eigenvectors of $S_W^{-1} S_B$ with the largest eige
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: Matrix operations are optimized by numpy.
--   **Memory**: Storing $S_W$ and $S_B$ ($Features \times Features$) can be expensive for high-dimensional data.
+-   **Memory**: Storing $S_W$and $S_B$($Features \times Features$) can be expensive for high-dimensional data.
 
 ## 7. Underlying Data Structure
 

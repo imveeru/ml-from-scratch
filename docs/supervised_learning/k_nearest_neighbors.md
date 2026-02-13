@@ -39,7 +39,7 @@ To classify a new data point, the algorithm:
 
 **Euclidean Distance:**
 $$ d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2} $$
-Where $x$ is the test sample and $x'$ is a training sample, and $n$ is the number of features.
+Where $x$is the test sample and $x'$is a training sample, and$n$ is the number of features.
 
 ## 4. Inputs Required
 

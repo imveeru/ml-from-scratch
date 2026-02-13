@@ -40,7 +40,7 @@ $$ \theta = \theta - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t $$
 ### Industry Best Practices
 
 -   **SGD + Momentum**: Often generalizes better than adaptive methods for computer vision (ConvNets), though requires more tuning of learning rate schedules.
--   **Adam**: The default "go-to" optimizer for most problems. Good starting point ($lr=3e-4$ or $1e-3$). Fast convergence.
+-   **Adam**: The default "go-to" optimizer for most problems. Good starting point ($lr=3e-4$or$1e-3 $). Fast convergence.
 -   **Learning Rate Decay**: Crucial for all optimizers. Reduce LR when loss plateaus.
 
 ## 3. Inputs Required

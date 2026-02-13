@@ -69,7 +69,7 @@ $$ f(x) = \text{sign}\left(\sum_{i \in SV} \alpha_i y_i K(x_i, x) + b\right) $$
 -   **Non-Linear**: Can efficienty model complex non-linear boundaries using Kernels.
 
 ### When not to use:
--   **Large Datasets**: The training time complexity is between $O(N^2)$ and $O(N^3)$, making it slow for datasets with $>100k$ samples.
+-   **Large Datasets**: The training time complexity is between $O(N^2)$and$O(N^3)$, making it slow for datasets with$>100k $ samples.
 -   **Noisy Data**: Overlap between classes can cause issues, though soft-margin ($C$) helps.
 -   **Probability Output**: Does not directly provide probability estimates.
 
@@ -80,7 +80,7 @@ $$ f(x) = \text{sign}\left(\sum_{i \in SV} \alpha_i y_i K(x_i, x) + b\right) $$
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: The QP solver (`cvxopt`) handles the optimization. Predicting is parallelizable.
--   **Memory**: Storing the Kernel Matrix of size $(N \times N)$ can be memory prohibitive for large $N$.
+-   **Memory**: Storing the Kernel Matrix of size $(N \times N)$can be memory prohibitive for large$N$.
 
 ## 7. Underlying Data Structure
 

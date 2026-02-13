@@ -47,7 +47,7 @@ Where $p = \sigma(F(x))$ (Sigmoid of the raw prediction).
 -   **X**: Training features (`n_samples`, `n_features`).
 -   **y**: Target labels/values (`n_samples`,).
 -   **n_estimators**: Number of boosting stages (trees) to perform.
--   **learning_rate**: Shrinkage parameter $\nu$ ($0 < \nu \le 1$) that scales the contribution of each tree.
+-   **learning_rate**: Shrinkage parameter $\nu$($0 < \nu \le 1$) that scales the contribution of each tree.
 -   **min_samples_split**, **min_impurity**, **max_depth**: Parameters for the underlying decision trees.
 
 ## 5. Usage Guidelines
@@ -69,7 +69,7 @@ Where $p = \sigma(F(x))$ (Sigmoid of the raw prediction).
 
 ## 6. Concurrency, Parallelism, Memory Management
 
--   **Concurrency/Parallelism**: Like Adaboost, training is **sequential** (Step $m$ needs Step $m-1$), so trees cannot be trained in parallel. However, tree construction itself can be parallelized.
+-   **Concurrency/Parallelism**: Like Adaboost, training is **sequential** (Step $m$needs Step $m-1$), so trees cannot be trained in parallel. However, tree construction itself can be parallelized.
 -   **Memory Management**: Stores `n_estimators` tree objects. Can be memory-intensive if trees are deep or numerous.
 
 ## 7. Underlying Data Structure

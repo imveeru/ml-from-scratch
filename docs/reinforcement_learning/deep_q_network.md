@@ -78,7 +78,7 @@ $$ L = \mathbb{E} \left[ (r + \gamma \max_{a'} Q(s', a'; \theta^-) - Q(s, a; \th
 
 ### Industry Best Practices:
 -   **Double DQN**: Mitigates overestimation bias of Q-values.
--   **Dueling DQN**: Splits Q-network into Value $V(s)$ and Advantage $A(s, a)$ streams.
+-   **Dueling DQN**: Splits Q-network into Value $V(s)$and Advantage$A(s, a)$ streams.
 -   **Prioritized Experience Replay**: Replay important transitions more often.
 -   **Hyperparameters**: Extremely sensitive. Requires careful tuning of learning rate, batch size, and buffer size.
 

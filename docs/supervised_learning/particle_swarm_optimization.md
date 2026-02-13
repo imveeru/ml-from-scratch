@@ -49,8 +49,8 @@ In this implementation, PSO is used to train a Neural Network, where the "positi
 $$ v_{id}(t+1) = w \cdot v_{id}(t) + c_1 r_1 (p_{id} - x_{id}(t)) + c_2 r_2 (p_{gd} - x_{id}(t)) $$
 
 Where:
--   $v_{id}$: Velocity of particle $i$ in dimension $d$.
--   $x_{id}$: Position (weight) of particle $i$.
+-   $v_{id}$: Velocity of particle$i $in dimension$d $.
+-   $x_{id}$: Position (weight) of particle$i$.
 -   $w$: **Inertia weight**. Controls impact of previous velocity.
 -   $c_1$: **Cognitive weight**. Pulls particle towards its own best position ($p_{id}$).
 -   $c_2$: **Social weight**. Pulls particle towards the swarm's best known position ($p_{gd}$).

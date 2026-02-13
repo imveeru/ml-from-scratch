@@ -26,5 +26,5 @@ $$ K(x_1, x_2) = \exp(-\gamma ||x_1 - x_2||^2) $$
 ### Industry Best Practices
 
 -   **Linear**: Use when the number of features is large (e.g., text classification) and data is likely linearly separable. Fast training.
--   **RBF**: The default choice for non-linear data. However, it requires careful tuning of $\gamma$ (gamma) and $C$ (regularization).
+-   **RBF**: The default choice for non-linear data. However, it requires careful tuning of $\gamma$(gamma) and $C$ (regularization).
 -   **Polynomial**: Less common than RBF but useful in image processing.

@@ -44,7 +44,7 @@ It combines two key concepts to reduce overfitting and variance:
 
 **Final Prediction (Classification):**
 $$ \hat{y} = \text{mode} \{ h_1(x), h_2(x), \dots, h_N(x) \} $$
-Where $h_i(x)$ is the prediction of the $i$-th tree.
+Where $h_i(x)$is the prediction of the$i$-th tree.
 
 ## 4. Inputs Required
 

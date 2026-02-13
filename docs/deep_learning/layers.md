@@ -6,12 +6,11 @@ This file implements the building blocks of Neural Networks. Each layer inherits
 
 ### Dense (Fully Connected)
 Standard layer where every input node is connected to every output node.
--   **Forward**: $Y = X\Theta + \theta_0$
--   **Backward**: Computes gradients for $\Theta$ and $\theta_0$ and propagates error to previous layer.
+-   **Forward**: $Y = X\Theta + \theta_0$-   **Backward**: Computes gradients for $\Theta$and $\theta_0$ and propagates error to previous layer.
 
 ### RNN (Recurrent Neural Network)
 Vanilla RNN layer for temporal data.
--   **Forward**: Compsoes hidden states over time: $h_t = \tanh(\Theta_x x_t + \Theta_h h_{t-1})$. Inputs are $(batch, timesteps, features)$.
+-   **Forward**: Compsoes hidden states over time: $h_t = \tanh(\Theta_x x_t + \Theta_h h_{t-1})$. Inputs are$(batch, timesteps, features)$.
 -   **Backward**: Uses Backpropagation Through Time (BPTT).
 
 ### Conv2D (Convolutional)
@@ -38,7 +37,7 @@ Downsamples the input.
 -   **ZeroPadding2D / ConstantPadding2D**: Adds padding to borders.
 
 ### Regularization
--   **Dropout**: Randomly sets input units to 0 with probability $p$ during training to prevent overfitting. scales inputs by $(1-p)$ (or uses inverted dropout mask) to maintain expected value.
+-   **Dropout**: Randomly sets input units to 0 with probability $p$during training to prevent overfitting. scales inputs by $(1-p)$ (or uses inverted dropout mask) to maintain expected value.
 
 ### Activation
 Wrapper layer to apply activation functions (from `activation_functions.py`).

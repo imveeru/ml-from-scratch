@@ -46,8 +46,8 @@ The core innovation of DCGAN over standard GANs is the use of convolutional laye
 **Objective Function (Minimax Game):**
 $$ \min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log (1 - D(G(z)))] $$
 
--   $D(x)$: Probability that $x$ is real.
--   $G(z)$: Image generated from noise $z$.
+-   $D(x)$: Probability that$x$ is real.
+-   $G(z)$: Image generated from noise$z$.
 
 ## 4. Inputs Required
 
@@ -65,7 +65,7 @@ $$ \min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}(x)}[\log D(x)] + \mathbb{
 -   **Discrete Data**: Hard to train on text or discrete data due to differentiability issues.
 
 ### Industry Best Practices:
--   **Batch Normalization**: Essential for stability in both $G$ and $D$.
+-   **Batch Normalization**: Essential for stability in both $G$and $D$.
 -   **LeakyReLU**: Use LeakyReLU in Discriminator to prevent "dying ReLU".
 -   **Strided Convolutions**: Use strides instead of Pooling layers.
 -   **Label Smoothing**: Use soft labels (e.g., 0.9 instead of 1.0) to prevent the discriminator from becoming too confident too early.

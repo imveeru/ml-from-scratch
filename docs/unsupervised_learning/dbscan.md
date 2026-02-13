@@ -68,7 +68,7 @@ Unlike K-Means, DBSCAN does not require specifying the number of clusters in adv
 
 ## 5. Concurrency, Parallelism, Memory Management
 
--   **Concurrency**: Simple implementation is sequential. Efficient implementations use spatial index structures (k-d trees) to speed up neighbor search ($O(N \log N)$ instead of $O(N^2)$).
+-   **Concurrency**: Simple implementation is sequential. Efficient implementations use spatial index structures (k-d trees) to speed up neighbor search ($O(N \log N)$instead of$O(N^2)$).
 -   **Memory**: Storing distance matrix is $O(N^2)$, so efficient index is preferred.
 
 ## 6. Underlying Data Structure

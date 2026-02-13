@@ -31,7 +31,7 @@ $$ \Sigma = \frac{1}{n-1} (X - \bar{X})^T (X - \bar{X}) $$
 
 **Projection:**
 $$ T = X \Theta_k $$
-Where $\Theta_k$ is the matrix of the top $k$ eigenvectors.
+Where $\Theta_k$is the matrix of the top $k$ eigenvectors.
 
 ## 4. Inputs Required
 
@@ -55,7 +55,7 @@ Where $\Theta_k$ is the matrix of the top $k$ eigenvectors.
 ## 6. Concurrency, Parallelism, Memory Management
 
 -   **Concurrency**: Matrix multiplication is parallelized.
--   **Memory**: Computing Covariance Matrix ($D \times D$) and Eigendecomposition can be expensive for very high $D$. Randomized PCA is often used for large datasets.
+-   **Memory**: Computing Covariance Matrix ($D \times D$) and Eigendecomposition can be expensive for very high$D $. Randomized PCA is often used for large datasets.
 
 ## 7. Underlying Data Structure
 

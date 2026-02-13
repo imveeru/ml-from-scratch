@@ -46,11 +46,11 @@ In this implementation:
 
 **Classifier Weight ($\alpha_t$):**
 $$ \alpha_t = \frac{1}{2} \ln\left(\frac{1 - \epsilon_t}{\epsilon_t}\right) $$
-Where $\epsilon_t$ is the weighted error rate of classifier $t$.
+Where $\epsilon_t$is the weighted error rate of classifier $t$.
 
 **Weight Update:**
 $$ w_i^{(t+1)} = w_i^{(t)} \cdot \exp\left(-\alpha_t \cdot y_i \cdot h_t(x_i)\right) $$
-Where $y_i$ is the true label (-1 or 1) and $h_t(x_i)$ is the predicted label.
+Where $y_i$is the true label (-1 or 1) and $h_t(x_i)$ is the predicted label.
 
 **Final Prediction:**
 $$ H(x) = \text{sign}\left(\sum_{t=1}^{T} \alpha_t h_t(x)\right) $$
@@ -74,7 +74,7 @@ $$ H(x) = \text{sign}\left(\sum_{t=1}^{T} \alpha_t h_t(x)\right) $$
 
 ### Industry Best Practices:
 - **Early Stopping**: Monitor validation error and stop adding classifiers when performance plateaus to prevent overfitting.
-- **Shrinkage (Learning Rate)**: Often combined with a learning rate parameter (0 < $\nu$ < 1) scaling the contribution of each classifier: $H(x) = \text{sign}(\sum \nu \alpha_t h_t(x))$.
+- **Shrinkage (Learning Rate)**: Often combined with a learning rate parameter (0 < $\nu$< 1) scaling the contribution of each classifier:$H(x) = \text{sign}(\sum \nu \alpha_t h_t(x))$.
 - **Outlier Handling**: Pre-process data to remove outliers before training.
 
 ## 6. Concurrency, Parallelism, Memory Management
