@@ -5,7 +5,9 @@ This file contains implementations of various activation functions used in Neura
 ## 1. Mathematical Formulas
 
 ### Sigmoid
-$`\sigma(x) = \frac{1}{1+e^{-x}}`$
+```math
+\sigma(x) = \frac{1}{1+e^{-x}}
+```
 **Derivative:** $\sigma(x)(1 - \sigma(x))$-   **Range**:$(0, 1)$. Good for binary classification output. Prone to vanishing gradient.
 
 ### Softmax
